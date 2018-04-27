@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.kafka:kafka-log4j-appender:1.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-log4j-appender/1.1.0/4f270c1c6842bb403ea3eaeeed02b2f2fbcd5cf7/kafka-log4j-appender-1.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-log4j-appender/1.1.0/ab3eb1c5c8f77b7e2dac2861d9cdaa0ff90af621/kafka-log4j-appender-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
