@@ -7,7 +7,8 @@ public class Demo {
     private static final Logger log = LoggerFactory.getLogger(Demo.class);
 
     public static void main(String args[]) {
-        log.info("aaaaa12345678990");
+        log.info("test123456789");
         //System.out.println("Hello World");
+        log.info("RUN MAIN FUNCTION");
     }
 }
