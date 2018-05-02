@@ -1,3 +1,8 @@
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.FileSystems;
+import java.nio.file.Paths;
+
 apply plugin: 'java'
 
 repositories {
@@ -8,5 +13,18 @@ dependencies {
   compile('org.apache.kafka:kafka-log4j-appender:1.1.0')
   compile('org.apache.logging.log4j:log4j-api:2.1')
   compile('org.apache.logging.log4j:log4j-core:2.1')
- // compile('org.slf4j:slf4j-simple:1.6.6')
+}
+
+jar {
+  configurations.compile.each { File path ->
+    String buildJarFolder = "build/lib"
+    if(!new File(buildJarFolder).exists()){
+      new File(buildJarFolder).mkdirs();
+    }
+    String newJarFilePath = buildJarFolder + "/" + path.name
+    if(!new File(newJarFilePath).exists()){
+      Files.copy(path.toPath(), FileSystems.getDefault().getPath(newJarFilePath))
+    }
+
+  }
 }
